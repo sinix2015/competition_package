@@ -10,7 +10,7 @@
    Скрипт:
    - Строит онлайн-признаки с помощью `src.features.FeatureGenerator`. Так же есть и `minimal_features, advanced_features, simple_features` и экспериментальный DLinearAugmentedFeatureGenerator `experiments.dlinear.feature_generator`.
    - Делит последовательности по `n_folds` (по умолчанию 5).
-   - Обучает ансамбль из MLP, Ridge и Transformer.
+   - Обучает ансамбль из MLP, Ridge и Transformer (ConvGRU, DilatedCNN, ResNet, Mamba, DeepGRU).
    - Сохраняет веса и статистики в `artifacts/` (при включённом финальном обучении).
    - Возвращает JSON-резюме с OOF и финальными метриками.
 3. После обучения `solution.py` автоматически подхватывает новые веса.
